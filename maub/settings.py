@@ -116,7 +116,12 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.9/howto/static-files/
-
 STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "maub", "static", "media")
+
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "maub", "static", "static_root")
+
+STATICFILES_DIRS = (
+    os.path.join(os.path.dirname(BASE_DIR), "maub", "templates", "assets", "static_files"),
+)
