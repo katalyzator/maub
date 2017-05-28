@@ -1,0 +1,52 @@
+{% load staticfiles %}
+
+<header>
+    <div class="header grid group">
+        <div class="logo">
+            <a href="#"><img src="{% static 'images/logo.png' %}" alt="logotype"></a>
+
+            <h4>MERKEZİ ASYA <br> ÜNİVERSİTELER BİRLİĞİ</h4>
+        </div>
+
+        <div class="form_block">
+            <form method="post" action="#">
+                <label>
+                    <input type="search" placeholder="Ara">
+                </label>
+                <label>
+                    <input type="submit" value="">
+                </label>
+            </form>
+
+            <ul class="languages">
+                <li><a href="#">КР</a></li>
+                <li><a href="#">TR</a></li>
+                <li><a href="#">РУ</a></li>
+                <li><a href="#">EN</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="nav_bar">
+        <nav class="grid">
+            <ul class="menu">
+                <li><a href="#">Ana sayfa</a></li>
+                <li><a href="#">hakkimizda</a></li>
+                <li>
+                    <a href="#">ÜNİVERSİTELER</a>
+                    <!--<ul class="submenu">-->
+                    <!--<li><a href="#">Bültenler</a></li>-->
+                    <!--<li><a href="#">Değerlendirmeler</a></li>-->
+                    <!--<li><a href="#">Makaleler</a></li>-->
+                    <!--<li><a href="#">Raporlar</a></li>-->
+                    <!--<li><a href="#">Kitaplar</a></li>-->
+                    <!--</ul>-->
+                </li>
+                <li><a href="#">ETKİNLİKLER</a></li>
+                <li><a href="#">VİDEOLAR</a></li>
+                <li><a href="#">RESİM GALERİSİ</a></li>
+                <li><a href="#">İLETİŞİM</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
